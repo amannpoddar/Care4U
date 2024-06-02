@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Care4u website</title>
+
+    <script defer src="./script.js"></script>
+    <script defer src="./server.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div>
+                <img src="images/updated_logoImage.png" alt="Care4u logo" class="nav__logo" id="logo" />
+            </div>
+            <a href="#" class="nav_siteName"><span class="highlight">Care</span>&nbsp;4u</a>
+            <!-- <a href="#" class="nav_siteName">Care4u</a> -->
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--1">Features</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--2">Operations</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--3">Testimonials</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link--btn btn--show-modal" href="#">Book a bed</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__title">
+            <!-- <h1 onclick="alert('HTML alert')"> -->
+            <h1>
+                <!-- Green highlight effect -->
+                <span class="highlight">Health Care</span>
+                <br />for&nbsp;
+                <span class="highlight">your family</span>
+            </h1>
+            <h4>Get Experienced & Certified nurses and attendant at home.</h4>
+            <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+            <img src="images/1stPhoto.png" class="header__img" alt="Minimalist bank items" />
+        </div>
+    </header>
+
+    <section class="section" id="section--1">
+        <div class="section__title">
+            <h2 class="section__description">Nursing services</h2>
+            <h3 class="section__header">
+                Everything you need in a nursing services and more.
+            </h3>
+        </div>
+
+        <div class="features">
+            <img src="images/group-of-doctors.png" data-src="images/group-of-doctors.png" alt="Computer" class="features__img lazy-img" />
+            <div class="features__feature">
+                <div class="features__icon">
+                    <!-- <svg>
+                        <use xlink:href="images/desktop-regular-24.svg#icon-monitor"></use>
+                    </svg> -->
+                    <i class='bx bx-upload'></i>
+                </div>
+                <h5 class="features__header">Experienced Team</h5>
+                <p>
+                    Our team has years of specialized experience to provide professional nursing care services
+                </p>
+            </div>
+
+            <div class="features__feature">
+                <div class="features__icon">
+                    <!-- <svg>
+                        <use xlink:href="img/icons.svg#icon-trending-up"></use>
+                    </svg> -->
+                    <i class='bx bx-trending-up' style='color:#5ec576'  ></i>
+                </div>
+                <h5 class="features__header">Special Abilities Patient Care</h5>
+                <p>
+                    Our nurses understand that patients with special abilities need special personal attention
+                </p>
+            </div>
+            <img src="images/girl-checking-patient-both-smilling.jpeg" data-src="images/girl-checking-patient-both-smilling.jpeg" alt="Plant" class="features__img lazy-img" />
+
+            <img src="images/front-three-lady-staff.webp" data-src="images/front-three-lady-staff.webp" alt="Credit card"
+                class="features__img lazy-img" />
+            <div class="features__feature">
+                <div class="features__icon">
+                    <!-- <svg>
+                        <use xlink:href="img/icons.svg#icon-credit-card"></use>
+                    </svg> -->
+                    <i class='bx bx-credit-card' style='color:#5ec576' ></i>
+                </div>
+                <h5 class="features__header">Certified Nurses</h5>
+                <p>
+                    We have a versatile team of certified nurses that specialize in providing professional at home
+                    nursing care
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="section--2">
+        <div class="section__title">
+            <h2 class="section__description">Operations</h2>
+            <h3 class="section__header">
+                Hospitality is simply an opportunity to show live and care.
+            </h3>
+        </div>
+
+        <div class="operations">
+            <div class="operations__tab-container">
+                <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
+                    ICU SET UP AT HOME
+                </button>
+                <button class="btn operations__tab operations__tab--2" data-tab="2">
+                    ISOLATION CARE
+                </button>
+                <button class="btn operations__tab operations__tab--3" data-tab="3">
+                    LAB INVESTIGATIONS
+                </button>
+            </div>
+            <div class="operations__content operations__content--1 operations__content--active">
+                <div class="operations__icon operations__icon--1">
+                    <i class='bx bx-shield-plus' style='color:rgba(244,199,21,0.71)'></i>
+                </div>
+                <!-- <h5 class="operations__header">
+                    ************===============*******************
+                </h5> -->
+                <p>
+                    Patients in serious conditions need more emotional support. So, to bring your loved ones closer to
+                    you, we provide an ICU setup facility at home. The care team is proficient in ICU and treats the
+                    patient in-hospital like environment within your comfort.
+                </p>
+            </div>
+
+            <div class="operations__content operations__content--2">
+                <div class="operations__icon operations__icon--2">
+                    <i class='bx bx-upload' style='color:#5ec576'  ></i>
+                </div>
+                <!-- <h5 class="operations__header">
+                    ************===============*******************
+                </h5> -->
+                <p>
+                    Currently, Covid-19 is a significant threat to public health. So, nowadays, we are also providing
+                    intensive personalized isolation care at home for covid positive patients. Our service helps the
+                    patients to speed up their recovery and prevent any further serious infections.
+                </p>
+            </div>
+            <div class="operations__content operations__content--3">
+                <div class="operations__icon operations__icon--3">
+                    <i class='bx bx-dna' style='color:#ff585f'  ></i>
+                </div>
+                <!-- <h5 class="operations__header">
+                    ************===============*******************
+                </h5> -->
+                <p>
+                    Our partner service providers are fully equipped with automated instruments and cell counters for
+                    carrying out regular lab investigations like TLC, DLC hemoglobin, etc. Besides, regular lab
+                    investigations our Specialists can also carry out special investigations in almost every niche.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="section--3">
+        <div class="section__title section__title--testimonials">
+            <h2 class="section__description">Testimonials</h2>
+            <h3 class="section__header">
+                Thank You to our amazing clients.
+            </h3>
+        </div>
+
+        <div class="slider">
+            <div class="slide">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">Hospitality is extremely good</h5>
+                    <blockquote class="testimonial__text">
+                        I needed someone reliable to stay with and help my mother who was home alone at the time. Abrar
+                        sent a female attendant over in the next few hours even though it was already late at night, so
+                        someone could be with her at all times. He really helped me sleep in peace that night. Thank
+                        you!
+                    </blockquote>
+                    <address class="testimonial__author">
+                        <img src="images/testimonial-1.png" alt="" class="testimonial__photo" />
+                        <h6 class="testimonial__name">MR HARDIK JAIN</h6>
+                        <p class="testimonial__location">Punjabi Bagh, Delhi</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">
+                        Doctors and staff are really caring
+                    </h5>
+                    <blockquote class="testimonial__text">
+                        Unfortunately my mother suffered from severe illness and I requested Mr. Mukul for help. He
+                        constantly helped us to meet our request 24*7. I am satisfied with the services and care
+                        providers. I owe you a debt of gratitude. I'm eternally grateful for your support. Thank you.
+                    </blockquote>
+                    <address class="testimonial__author">
+                        <img src="images/testimonial-2.jpeg" alt="" class="testimonial__photo" />
+                        <h6 class="testimonial__name">MR ANKIT BANSAL</h6>
+                        <p class="testimonial__location">Sonipat, Haryana</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">
+                        Amazed with the services
+                    </h5>
+                    <blockquote class="testimonial__text">
+                        I had a surgery and needed daily medical dressing. I called Abrar and am happy to recommend his
+                        service. He came home and changed my dressing with utmost care. He is like a friend now and I
+                        contact him for all my home medical needs
+                    </blockquote>
+                    <address class="testimonial__author">
+                        <img src="images/testimonial-3.jpeg" alt="" class="testimonial__photo" />
+                        <h6 class="testimonial__name">MRS ANSHU SINGH</h6>
+                        <p class="testimonial__location">DELHI</p>
+                    </address>
+                </div>
+            </div>
+
+            <button class="slider__btn slider__btn--left">&larr;</button>
+            <button class="slider__btn slider__btn--right">&rarr;</button>
+            <div class="dots"></div>
+        </div>
+    </section>
+
+    <section class="section section--sign-up">
+        <div class="section__title">
+            <h3 class="section__header">
+                You are just a click away from making an appointment
+            </h3>
+        </div>
+        <button class="btn btn--show-modal">Request an appoinment</button>
+    </section>
+
+    <footer class="footer">
+        <ul class="footer__nav">
+            <li class="footer__item">
+                <a class="footer__link" href="#">About</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">Pricing</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">Terms of Use</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">Careers</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">Blog</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">Contact Us</a>
+            </li>
+        </ul>
+        <img src="images/updated_logoImage.png" alt="Logo" class="footer__logo" />
+        <p class="footer__details">
+            For more details Contact us:
+            <a class="footer__link" href="#">9817925972,</a>&nbsp;
+            <a class="footer__link" href="#">7894927543,</a>&nbsp;
+            <a class="footer__link" href="#">7004889413,</a>&nbsp;
+            <a class="footer__link" href="#">7250838083.</a>&nbsp;
+        </p>
+
+    </footer>
+
+    <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+            Book a bed <br />
+            in just <span class="highlight">5 minutes</span>
+        </h2>
+        <form class="modal__form">
+            <label>First Name</label>
+            <input type="text" />
+            <label>Last Name</label>
+            <input type="text" />
+            <label>Email Address</label>
+            <input type="email" />
+            <button class="btn bookbtnNextStep">Next step &rarr;</button>
+        </form>
+    </div>
+     
+    <!-- added by aman -->
+    <div class="modal-2 hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header_location">
+            Choose Your Location<br />
+            <!-- in just <span class="highlight-form">5 minutes</span> -->
+        </h2>
+        <div class="grid-container">
+            <!-- <div class="map-choose-location"> -->
+            <!-- add map -->
+            <!-- <p>will add map soon...</p> -->
+            <div class="grid-items">
+                <form class="modal__form_location">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <!-- <option value="option">option</option> -->
+
+                        <!-- by jyoti -->
+                        <option value="" selected disabled>e.g: Punjab</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <!-- end by jyoti -->
+
+                    </select>
+                    <!-- <input type="submit" value="Submit" /> -->
+                    <label for="Area">Area</label>
+                    <select name="area" id="area">
+                        <!-- start by jyoti -->
+
+                        <option value="" selected disabled>e.g: Jalandhar</option>
+
+                        <option value="Ludhiana">Ludhiana</option>
+                        <option value="Amritsar">Amritsar</option>
+                        <option value="Jalandhar">Jalandhar</option>
+                        <option value="Patiala">Patiala</option>
+                        <option value="Bathinda">Bathinda</option>
+                        <option value="Phagwara">Phagwara</option>
+
+                  
+                        <option value="New Delhi">New Delhi</option>
+                        <option value="North Delhi">North Delhi</option>
+                        <option value="South Delhi">South Delhi</option>
+                        <option value="East Delhi">East Delhi</option>
+                        <option value="West Delhi">West Delhi</option>
+                  
+                        <option value="Gurugram">Gurugram</option>
+                        <option value="Faridabad">Faridabad</option>
+                        <option value="Ambala">Ambala</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Bhubaneswar">Bhubaneswar</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Lucknow">Lucknow</option>
+                        <option value="Kanpur">Kanpur</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Indore">Indore</option>
+                        <option value="Thane">Thane</option>
+                        <option value="Bhopal">Bhopal</option>
+                        <option value="Visakhapatnam">Visakhapatnam</option>
+                        <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
+                        <option value="Patna">Patna</option>
+                        <option value="Vadodara">Vadodara</option>
+                        <option value="Ghaziabad">Ghaziabad</option>
+                        <option value="Jajpur">Jajpur</option>
+                        <option value="Agra">Agra</option>
+                        <option value="Nashik">Nashik</option>
+                        <option value="Faridabad">Faridabad</option>
+                        <option value="Meerut">Meerut</option>
+                        <option value="Rajkot">Rajkot</option>
+                        <option value="Varanasi">Varanasi</option>
+                        <option value="Srinagar">Srinagar</option>
+                        <option value="Aurangabad">Aurangabad</option>
+                        <option value="Dhanbad">Dhanbad</option>
+                        <option value="Amritsar">Amritsar</option>
+                        <option value="Navi Mumbai">Navi Mumbai</option>
+                        <option value="Allahabad">Allahabad</option>
+                        <option value="Ranchi">Ranchi</option>
+                        <option value="Howrah">Howrah</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Jabalpur">Jabalpur</option>
+                        <option value="Gwalior">Gwalior</option>
+                        <option value="Vijayawada">Vijayawada</option>
+                        <option value="Jodhpur">Jodhpur</option>
+                        <option value="Madurai">Madurai</option>
+                        <option value="Raipur">Raipur</option>
+                        <option value="Kota">Kota</option>
+                        <option value="Guwahati">Guwahati</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Solapur">Solapur</option>
+                        <option value="Hubli-Dharwad">Hubli-Dharwad</option>
+                        <option value="Bareilly">Bareilly</option>
+                        <option value="Moradabad">Moradabad</option>
+
+                        <!-- END BY jyoti -->
+
+                    </select>
+                    <label>Pincode</label>
+                    <input type="text" />
+                    <button class="btn btn-chooseLocationNextStep">Next step &rarr;</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- modal-3 -->
+    <div class="modal appointment hidden">
+        <h2 class="modal__header">
+            Appointment Details
+        </h2>
+        <form action="/submit-form" method="post" class="appoinment_form">
+            <div class="form-content">
+                <label for="patient_name">Patient Name:</label>
+                <input type="text" id="patient_name" name="patient_name" required>
+            </div>
+            <div class="form-content">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required>
+            </div>
+            <div class="form-content">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-content">
+                <label for="mobile">Mobile:</label>
+                <input type="text" id="mobile" name="mobile" required>
+            </div>
+        
+            <div class="form-content">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-content">
+                <label for="appointment_date">Date of Appointment:</label>
+                <input type="date" id="appointment_date" name="appointment_date" required>
+            </div>
+            <div class="form-content">
+                <label for="time_slot">Time Slot:</label>
+                <input type="time" id="time_slot" name="time_slot" required>
+            </div>
+        </form>
+        <div class="btn-div">
+            <button class="btn btn-appointmentNextStep">Next step &rarr;</button>
+        </div>
+    </div>
+
+    <div class=""></div>
+    <div class="overlay hidden"></div>
+
+
+</body>
+
+</html>
